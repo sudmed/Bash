@@ -1,5 +1,5 @@
-#Homework@03_scripts
-#! /bin/bash
+#!/bin/bash
+
 
 echo "Creating folder"
 mkdir Name_Surname
@@ -8,6 +8,7 @@ echo "Creating files"
 touch Name
 touch Surname
 ls -d */ | cut -f1 -d'/'
+
 
 : '
 ./script.sh
