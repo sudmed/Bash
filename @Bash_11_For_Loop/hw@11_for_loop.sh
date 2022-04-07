@@ -20,7 +20,7 @@ if [[ -n "$1" ]] && [[ -n "$2" ]]; then
   	case $i in
   		*[a-zA-Z]* ) echo "Enter integers only" ;;
 			*[0-9] )
-					for i do sum=$(expr $sum + $i); done; echo "SUM: $sum"
+					for j do sum=$(expr $sum + "$j"); done; echo "SUM: $sum"
 					echo "Args number: $#"
 					echo "Result:" $(expr $sum / $#)
 				;;
