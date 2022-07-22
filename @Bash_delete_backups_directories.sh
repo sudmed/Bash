@@ -2,8 +2,8 @@
 find /opt/backup/ -type d -printf '\%T@ \%p\n' | sort -rnk1 | awk 'NR>30' | xargs --no-run-if-empty rm -rf
 
 
-# /etc/crontab
-:'
+# in /etc/crontab
+: '
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
