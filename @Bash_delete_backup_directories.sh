@@ -6,7 +6,6 @@ find /opt/backup/ -type d -printf '\%T@ \%p\n' | sort -rnk1 | awk 'NR>30' | xarg
 : '
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
 # Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
