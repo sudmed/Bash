@@ -1,4 +1,4 @@
-# Delete all backups exept last 30
+# Delete all backup directories exept last 30
 find /opt/backup/ -type d -printf '\%T@ \%p\n' | sort -rnk1 | awk 'NR>30' | xargs --no-run-if-empty rm -rf
 
 
